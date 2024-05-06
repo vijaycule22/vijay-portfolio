@@ -12,7 +12,7 @@ function App() {
           <p>Hi, I'm Vijay. A passionate Front-end web Developer <br /> based in Hyderabad, India. 📍</p>
         </div>
         <div>
-          <img className="vj-imng" src="/vijay.png" alt="vijay"/>
+          <img className="vj-imng" src="/assets/vijay.png" alt="vijay"/>
         </div>
       </div>
       <div className="flex mt-10 hero items-center">
