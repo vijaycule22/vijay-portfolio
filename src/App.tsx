@@ -59,16 +59,44 @@ function App() {
             <img className="vj-img" src={vijay} alt="vijay" />
           </div>
         </div>
-        <div className="flex mt-10 hero items-center">
+        <div className="flex hero items-center tech-stack ">
           <div className="mr-5">Tech Stack |</div>
           <div className="flex">
-            <img src="https://skillicons.dev/icons?i=html,css" alt="" />
-            <img src="https://skillicons.dev/icons?i=js,ts" alt="" />
-            <img src="https://skillicons.dev/icons?i=angular" alt="" />
-            <img src="https://skillicons.dev/icons?i=react" alt="" />
-            <img src="https://skillicons.dev/icons?i=tailwind,scss" alt="" />
-            <img src="https://skillicons.dev/icons?i=mongodb" alt="" />
-            <img src="https://skillicons.dev/icons?i=nodejs" alt="" />
+            <img
+              className="pr-2"
+              src="https://skillicons.dev/icons?i=html,css"
+              alt=""
+            />
+            <img
+              className="pr-2"
+              src="https://skillicons.dev/icons?i=js,ts"
+              alt=""
+            />
+            <img
+              className="pr-2"
+              src="https://skillicons.dev/icons?i=angular"
+              alt=""
+            />
+            <img
+              className="pr-2"
+              src="https://skillicons.dev/icons?i=react"
+              alt=""
+            />
+            <img
+              className="pr-2"
+              src="https://skillicons.dev/icons?i=tailwind,scss"
+              alt=""
+            />
+            <img
+              className="pr-2"
+              src="https://skillicons.dev/icons?i=mongodb"
+              alt=""
+            />
+            <img
+              className="pr-2"
+              src="https://skillicons.dev/icons?i=nodejs"
+              alt=""
+            />
           </div>
         </div>
       </section>
@@ -89,10 +117,11 @@ function App() {
                 </span>
               </div>
               <div className="text-side">
-                <h3>About me</h3>
-                <h4>
+                <span className="bg-[#bce1fb] font-bold p-1">About me</span>
+
+                <div className="font-bold text-3xl my-4">
                   Front-end Developer <br /> based in Hyderabad, India 📍
-                </h4>
+                </div>
                 <p>
                   Hey, my name is Vijay, and I'm a Frontend Developer. My
                   passion is to create and develop a clean UI/UX for my users.
