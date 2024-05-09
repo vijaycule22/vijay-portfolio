@@ -88,7 +88,7 @@ section .hero {
   margin-top: 6rem !important;
 }
 
-.about, .projects {
+.about, .contacts, .projects {
   background-color: #ffffff;
   padding: 8rem 0;
   display: flex;
@@ -100,6 +100,28 @@ section .hero {
 
 .projects {
   background-color: #f9f9f9 !important;
+}
+
+.contacts {
+  background-color: #fff !important;
+}
+
+.contacts .icon {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #147efb;
+  display: flex;
+  height: 3rem;
+  justify-content: center;
+  width: 3rem;
+  margin-right: 10px;
+}
+.contacts .cnt-block {
+  padding: 20px;
+  border-radius: 40px;
+  color: #555;
 }
 
 .projects .description {
@@ -116,7 +138,7 @@ section .hero {
 }
 
 @media (max-width: 1020px) {
-  .about, .projects {
+  .about, .projects, .contacts {
     padding: 8rem 0;
   }
 }

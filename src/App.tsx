@@ -156,7 +156,7 @@ function App() {
         <div className="flex items-center justify-between hero">
           <div className="container">
             <span className="bg-[#bce1fb] font-bold p-1 mb-10 inline-block">
-              PROJECTS
+              Projects
             </span>
             <div className="flex items-center">
               <div className="w-1/2">
@@ -238,6 +238,85 @@ function App() {
                 </p>
               </div>
             </div> */}
+          </div>
+        </div>
+      </section>
+
+      <section className="contacts" id="contacts">
+        <div className="flex items-center justify-between hero">
+          <div className="container">
+            <span className="bg-[#bce1fb] font-bold p-1 mb-10 inline-block">
+              Contact
+            </span>
+
+            <div className="flex">
+              <div className="w-1/2">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d109966.53412125268!2d78.48506214638006!3d17.425885924590325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1715237115910!5m2!1sen!2sin"
+                  width="400"
+                  height="280"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  className="rounded-lg shadow-lg"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <div className="w-1/2">
+                <p className="text-3xl font-bold mb-8">Hit me up! 👇</p>
+
+                <div className="flex cnt-block shadow-lg">
+                  <span className="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      className="tabler-icon tabler-icon-mail"
+                    >
+                      <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"></path>
+                      <path d="M3 7l9 6l9 -6"></path>
+                    </svg>
+                  </span>
+                  <div className="flex flex-col">
+                    <p className="font-bold">Email</p>
+                    <p>vjvijaykumar0@gmail.com</p>
+                  </div>
+                </div>
+
+                <div className="flex cnt-block shadow-lg mt-4">
+                  <span className="icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      className="tabler-icon tabler-icon-map-search"
+                    >
+                      <path d="M11 18l-2 -1l-6 3v-13l6 -3l6 3l6 -3v7.5"></path>
+                      <path d="M9 4v13"></path>
+                      <path d="M15 7v5"></path>
+                      <path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                      <path d="M20.2 20.2l1.8 1.8"></path>
+                    </svg>
+                  </span>
+                  <div className="flex flex-col">
+                    <p className="font-bold">Location</p>
+                    <p>Hyderabad, India</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
