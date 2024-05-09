@@ -40,6 +40,9 @@ nav ul a {
   font-weight: 600;
   text-decoration: none;
   transition: all 0.23s;
+  &:hover {
+    color: #1da1ff;
+  }
 }
 
 section {
@@ -48,6 +51,7 @@ section {
   .hero {
     width: 60vw;
     padding: 0 2rem;
+    margin: 0 auto;
   }
 }
 
@@ -62,7 +66,7 @@ section {
   .title-block {
     h1 {
       font-size: 3.5rem;
-      font-weight: 900;
+      font-weight: 800;
       line-height: 1.2;
       margin-bottom: 1.5rem;
     }
@@ -87,18 +91,37 @@ section {
 }
 
 .tech-stack {
-  margin-top: 6rem;
+  margin-top: 6rem !important;
 }
 
 .about {
   background-color: #ffffff;
-  padding: 10rem 0;
+  padding: 8rem 0;
   // height: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #2d2e32;
   flex-direction: column;
+}
+.projects {
+  @extend .about;
+  background-color: #f9f9f9 !important;
+}
+
+.projects {
+  .description {
+    font-weight: 500;
+    line-height: 1.5;
+    opacity: 0.75;
+  }
+}
+
+.proj-img {
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 .about {
@@ -176,7 +199,7 @@ section {
     position: absolute;
     background-color: white;
     bottom: -33px;
-    right: -14px;
+    right: -58px;
     border-radius: 50%;
 
     @media (max-width: 1020px) {
@@ -212,8 +235,6 @@ section {
   }
 
   &__main-img {
-    // width: 41rem;
-    // height: 35rem;
     border-radius: 1.7rem;
 
     @media (max-width: 1020px) {
@@ -232,7 +253,7 @@ section {
   z-index: 10;
   width: 3rem !important;
   bottom: 30px;
-  right: 43px;
+  right: 0;
 
   @media (max-width: 1020px) {
     bottom: 25px;

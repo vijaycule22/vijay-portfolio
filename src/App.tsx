@@ -2,6 +2,7 @@ import vijay from "./assets/vijay.png";
 import animage from "./assets/animage.svg";
 import vjbg from "./assets/vjbg.jpeg";
 import workicon from "./assets/workicon.png";
+import c2hire from "./assets/c2hire-project.png";
 
 function App() {
   return (
@@ -16,10 +17,10 @@ function App() {
             <a href="#about">About</a>
           </li>
           <li>
-            <a href="">Projects</a>
+            <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="">Contacts</a>
+            <a href="#contacts">Contacts</a>
           </li>
         </ul>
       </nav>
@@ -153,7 +154,91 @@ function App() {
 
       <section className="projects" id="projects">
         <div className="flex items-center justify-between hero">
-          <div className="container"></div>
+          <div className="container">
+            <span className="bg-[#bce1fb] font-bold p-1 mb-10 inline-block">
+              PROJECTS
+            </span>
+            <div className="flex items-center">
+              <div className="w-1/2">
+                <p className="font-bold text-3xl my-4">C2Hire.</p>
+                <p className="description pr-8">
+                  C2Hire. is the platform that stands and believes in the Vision
+                  - the vision of making a difference to the Education
+                  ecosystem.
+                  <br />
+                  <br />
+                  <div className="inline-flex">
+                    <img
+                      className="mr-2 skill-icon h-6 shadow-md round-md"
+                      src="https://skillicons.dev/icons?i=html"
+                      alt=""
+                    />
+                    <img
+                      className="mr-2 skill-icon h-6 shadow-md round-md"
+                      src="https://skillicons.dev/icons?i=react"
+                      alt=""
+                    />
+                    <img
+                      className="mr-2 skill-icon h-6 shadow-md round-md"
+                      src="https://skillicons.dev/icons?i=tailwind"
+                      alt=""
+                    />
+                  </div>
+                </p>
+              </div>
+              <div className="w-1/2">
+                <div className="card flex justify-end">
+                  <a
+                    href="https://hardcore-galileo-246771.netlify.app/"
+                    target="_blank"
+                  >
+                    <img
+                      src={c2hire}
+                      width={600}
+                      alt=""
+                      className="shadow-lg rounded-lg proj-img"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center mt-24 opacity-70 font-bold">
+              updating soon......
+            </div>
+            {/* 
+            <div className="flex items-center mt-24">
+              <div className="w-1/2">
+                <div className="card flex justify-end">
+                  <a
+                    href="https://hardcore-galileo-246771.netlify.app/"
+                    target="_blank"
+                  >
+                    <img
+                      src={c2hire}
+                      width={600}
+                      alt=""
+                      className="shadow-lg rounded-lg proj-img"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div className="w-1/2">
+                <p className="font-bold text-3xl my-4">C2Hire.</p>
+                <p className="description pr-8">
+                  C2Hire. is the platform that stands and believes in the Vision
+                  - the vision of making a difference to the Education
+                  ecosystem.
+                  <br />
+                  <br />
+                  It is powered by a combined Management Experience of 100+
+                  years effectively driving to build a Scalable, Secure &
+                  Integrated platform with required transparency and with
+                  built-in validation & verification mechanism.
+                </p>
+              </div>
+            </div> */}
+          </div>
         </div>
       </section>
 
