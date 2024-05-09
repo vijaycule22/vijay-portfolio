@@ -21,7 +21,7 @@ html {
   height: auto;
   justify-content: space-between;
   left: 0;
-  padding: 25px 40px 25px 50px;
+  padding: 20px 50px 20px 50px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -120,7 +120,7 @@ section {
 }
 
 .text-side {
-  padding-left: 2rem;
+  padding-left: 4rem;
   @media (max-width: 1020px) {
     max-width: 54rem;
     margin: 0 auto;
@@ -156,6 +156,14 @@ section {
     // color: $text-color;
     font-weight: 500;
     line-height: 1.5;
+    opacity: 0.75;
+  }
+}
+
+.skill-icon {
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: translateY(-10px);
   }
 }
 

@@ -78,37 +78,37 @@ function App() {
           <div className="mr-5">Tech Stack |</div>
           <div className="flex">
             <img
-              className="pr-2"
+              className="pr-2 skill-icon"
               src="https://skillicons.dev/icons?i=html,css"
               alt=""
             />
             <img
-              className="pr-2"
+              className="pr-2 skill-icon"
               src="https://skillicons.dev/icons?i=js,ts"
               alt=""
             />
             <img
-              className="pr-2"
+              className="pr-2 skill-icon"
               src="https://skillicons.dev/icons?i=angular"
               alt=""
             />
             <img
-              className="pr-2"
+              className="pr-2 skill-icon"
               src="https://skillicons.dev/icons?i=react"
               alt=""
             />
             <img
-              className="pr-2"
+              className="pr-2 skill-icon"
               src="https://skillicons.dev/icons?i=tailwind,scss"
               alt=""
             />
             <img
-              className="pr-2"
+              className="pr-2 skill-icon"
               src="https://skillicons.dev/icons?i=mongodb"
               alt=""
             />
             <img
-              className="pr-2"
+              className="pr-2 skill-icon"
               src="https://skillicons.dev/icons?i=nodejs"
               alt=""
             />
