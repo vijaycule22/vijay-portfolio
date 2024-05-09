@@ -1,4 +1,3 @@
-import Navbar from "./components/navbar";
 import vijay from "./assets/vijay.png";
 import animage from "./assets/animage.svg";
 import vjbg from "./assets/vjbg.jpeg";
@@ -7,7 +6,23 @@ import workicon from "./assets/workicon.png";
 function App() {
   return (
     <>
-      <Navbar />
+      <nav className="nav">
+        <h2 className="font-bold">Vijay.dev</h2>
+        <ul>
+          <li>
+            <a href="#Home">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="">Projects</a>
+          </li>
+          <li>
+            <a href="">Contacts</a>
+          </li>
+        </ul>
+      </nav>
 
       <section className="home-section" id="Home">
         <div className="flex items-center justify-between hero">
@@ -56,7 +71,7 @@ function App() {
             </div>
           </div>
           <div>
-            <img className="vj-img" src={vijay} alt="vijay" />
+            <img className="vj-img pr-5" src={vijay} alt="vijay" />
           </div>
         </div>
         <div className="flex hero items-center tech-stack ">

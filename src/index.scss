@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+html {
+  // add smoothscroll
+  scroll-behavior: smooth;
+}
 .nav {
   align-items: center;
   background-color: #fff;
