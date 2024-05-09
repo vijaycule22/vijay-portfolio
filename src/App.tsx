@@ -20,7 +20,7 @@ function App() {
             <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#contacts">Contacts</a>
+            <a href="#contacts">Contact</a>
           </li>
         </ul>
       </nav>
