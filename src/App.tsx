@@ -1,5 +1,8 @@
 import Navbar from "./components/navbar";
 import vijay from "./assets/vijay.png";
+import animage from "./assets/animage.svg";
+import vjbg from "./assets/vjbg.jpeg";
+import workicon from "./assets/workicon.png";
 
 function App() {
   return (
@@ -70,7 +73,39 @@ function App() {
         </div>
       </section>
 
-      <section id="About" className="about"></section>
+      <section className="about" id="about">
+        <div className="flex items-center justify-between hero">
+          <div className="container">
+            <div className="about-content">
+              <div className="img-side">
+                <img src={workicon} alt="emoji" className="work-emoji" />
+                <img
+                  src={vjbg}
+                  alt="mee"
+                  className="img-side__main-img shadow-lg rounded-lg"
+                />
+                <span className="shadow-lg rounded-lg">
+                  <img src={animage} alt="text" />
+                </span>
+              </div>
+              <div className="text-side">
+                <h3>About me</h3>
+                <h4>
+                  Front-end Developer <br /> based in Hyderabad, India 📍
+                </h4>
+                <p>
+                  Hey, my name is Vijay, and I'm a Frontend Developer. My
+                  passion is to create and develop a clean UI/UX for my users.
+                  <br />
+                  <br />
+                  My main stack currently is Angular,React and Node in
+                  combination with Tailwind CSS and TypeScript.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
