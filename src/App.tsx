@@ -3,27 +3,15 @@ import animage from "./assets/animage.svg";
 import vjbg from "./assets/vjbg.jpeg";
 import workicon from "./assets/workicon.png";
 import c2hire from "./assets/c2hire-project.png";
+import Navbar from "./components/navbar";
+import Footer from "./components/Footer";
+import html from "./assets/html.svg";
+import css from "./assets/css3.svg";
 
 function App() {
   return (
     <>
-      <nav className="nav">
-        <h2 className="font-bold">Vijay.dev</h2>
-        <ul>
-          <li>
-            <a href="#Home">Home</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#contacts">Contact</a>
-          </li>
-        </ul>
-      </nav>
+      <Navbar />
 
       <section className="home-section" id="Home">
         <div className="flex items-center justify-between hero">
@@ -70,12 +58,15 @@ function App() {
                 <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
               </svg>
             </div>
+            <div className="mt-4">
+              <button className="home-btn">Lets get starter </button>
+            </div>
           </div>
-          <div>
-            <img className="vj-img pr-5" src={vijay} alt="vijay" />
+          <div className="profile-circle mr-5">
+            <img className="vj-img" src={vijay} alt="vijay" />
           </div>
         </div>
-        <div className="flex hero items-center tech-stack ">
+        {/* <div className="flex hero items-center tech-stack ">
           <div className="mr-5">Tech Stack |</div>
           <div className="flex">
             <img
@@ -114,44 +105,27 @@ function App() {
               alt=""
             />
           </div>
+        </div> */}
+        {/* <p style={{ width: "56vw" }} className="relative bottom-3">
+          Tech Stack
+        </p> */}
+        <div className="flex tech">
+          <span className="tech-blc">
+            <img src={html} alt="" />
+            HTML
+          </span>
+          <span className="tech-blc">
+            <img src={css} alt="" />
+            CSS
+          </span>
+          <span className="tech-blc">Angular</span>
+          <span className="tech-blc">React</span>
+          <span className="tech-blc">SCSS</span>
+          <span className="tech-blc">Nodejs</span>
+          <span className="tech-blc">SQL</span>
+          <span className="tech-blc">RxJs</span>
         </div>
       </section>
-
-      <section className="about" id="about">
-        <div className="flex items-center justify-between hero">
-          <div className="container">
-            <div className="about-content">
-              <div className="img-side">
-                <img src={workicon} alt="emoji" className="work-emoji" />
-                <img
-                  src={vjbg}
-                  alt="mee"
-                  className="img-side__main-img shadow-lg rounded-lg"
-                />
-                <span className="shadow-lg rounded-lg">
-                  <img src={animage} alt="text" />
-                </span>
-              </div>
-              <div className="text-side">
-                <span className="bg-[#bce1fb] font-bold p-1">About me</span>
-
-                <div className="font-bold text-3xl my-4">
-                  Front-end Developer <br /> based in Hyderabad, India 📍
-                </div>
-                <p>
-                  Hey, my name is Vijay, and I'm a Frontend Developer. My
-                  passion is to create and develop a clean UI/UX for my users.
-                  <br />
-                  <br />
-                  My main stack currently is Angular,React and Node in
-                  combination with Tailwind CSS and TypeScript.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section className="projects" id="projects">
         <div className="flex items-center justify-between hero">
           <div className="container">
@@ -183,6 +157,11 @@ function App() {
                       src="https://skillicons.dev/icons?i=tailwind"
                       alt=""
                     />
+                  </div>
+                  <div className="mt-2">
+                    <button className="px-3 py-2 bg-[#004fd0] text-white text-sm rounded hover:bg-blue-600 transition duration-300 ease-in-out">
+                      Showcase
+                    </button>
                   </div>
                 </p>
               </div>
@@ -242,10 +221,45 @@ function App() {
         </div>
       </section>
 
+      <section className="about" id="about">
+        <div className="flex items-center justify-between hero">
+          <div className="container">
+            <div className="about-content">
+              <div className="img-side">
+                <img src={workicon} alt="emoji" className="work-emoji" />
+                <img
+                  src={vjbg}
+                  alt="mee"
+                  className="img-side__main-img shadow-lg rounded-lg"
+                />
+                <span className="shadow-lg rounded-lg">
+                  <img src={animage} alt="text" />
+                </span>
+              </div>
+              <div className="text-side">
+                <span className="bg-[#bce1fb] font-bold p-1">About me</span>
+
+                <div className="font-bold text-2xl my-4">
+                  Front-end web Developer
+                </div>
+                <p>
+                  Hey, my name is Vijay, and I'm a Frontend Developer. My
+                  passion is to create and develop a clean UI/UX for my users.
+                  <br />
+                  <br />
+                  My main stack currently is Angular,React and Node in
+                  combination with Tailwind CSS and TypeScript.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="contacts" id="contacts">
         <div className="flex items-center justify-between hero">
           <div className="container">
-            <span className="bg-[#bce1fb] font-bold p-1 mb-10 inline-block">
+            <span className="bg-[#bce1fb] text-[#080808] font-bold p-1 mb-10 inline-block">
               Contact
             </span>
 
@@ -322,47 +336,7 @@ function App() {
       </section>
 
       {/* add footer */}
-      <section className="bg-gray-800 text-white flex justify-center w-full">
-        <div className="flex items-center justify-between hero">
-          <div className="flex justify-between w-full py-16">
-            <p className="text-xl">Copyright © 2024. All rights are reserved</p>
-            <div className="flex">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                className="tabler-icon tabler-icon-brand-linkedin"
-              >
-                <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
-                <path d="M8 11l0 5"></path>
-                <path d="M8 8l0 .01"></path>
-                <path d="M12 16l0 -5"></path>
-                <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                className="tabler-icon tabler-icon-brand-github"
-              >
-                <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
-              </svg>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Footer />
     </>
   );
 }
