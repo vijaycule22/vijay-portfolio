@@ -143,12 +143,12 @@ section .hero {
 }
 
 .about, .contacts, .projects {
-  background-color: #080808;
+  background-color: #ffffff;
   padding: 8rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ffffff;
+  color: #080808;
   flex-direction: column;
 }
 
@@ -158,7 +158,32 @@ section .hero {
 }
 
 .contacts {
-  background-color: #fff !important;
+  background-color: #080808 !important;
+  color: #fff;
+}
+
+.testimonial {
+  padding: 8rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #080808 !important;
+  color: #9c9c9c;
+  flex-direction: row;
+}
+.testimonial h1 {
+  color: #fff;
+  margin-bottom: 2rem;
+}
+.testimonial .profile {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.testimonial .profile img {
+  height: 40px;
+  width: 40px;
 }
 
 .contacts .icon {
@@ -175,8 +200,10 @@ section .hero {
 }
 .contacts .cnt-block {
   padding: 20px;
-  border-radius: 40px;
-  color: #555;
+  border-radius: 4px;
+  color: #8a8a8a;
+  background: #080808;
+  border: 1px solid #9c9c9c;
 }
 
 .projects .description {

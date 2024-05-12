@@ -10,6 +10,9 @@ function Navbar() {
           <a href="#projects">Projects</a>
         </li>
         <li>
+          <a href="#testimonial">testimonial</a>
+        </li>
+        <li>
           <a href="#about">About</a>
         </li>
         <li>

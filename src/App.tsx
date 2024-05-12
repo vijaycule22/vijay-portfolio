@@ -7,6 +7,7 @@ import Navbar from "./components/navbar";
 import Footer from "./components/Footer";
 import html from "./assets/html.svg";
 import css from "./assets/css3.svg";
+import Testimonial from "./components/testimonial";
 
 function App() {
   return (
@@ -221,6 +222,8 @@ function App() {
         </div>
       </section>
 
+      <Testimonial />
+
       <section className="about" id="about">
         <div className="flex items-center justify-between hero">
           <div className="container">
@@ -277,7 +280,7 @@ function App() {
                 ></iframe>
               </div>
               <div className="w-1/2">
-                <p className="text-3xl font-bold mb-8 text-[#080808]">
+                <p className="text-3xl font-bold mb-8 text-white">
                   Hit me up! 👇
                 </p>
 
