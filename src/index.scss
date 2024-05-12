@@ -52,7 +52,7 @@ nav ul a {
   text-decoration: none;
   transition: all 0.23s;
   &:hover {
-    color: #1da1ff;
+    color: #dcc600 !important;
   }
 }
 
@@ -131,14 +131,15 @@ section {
 }
 
 .home-btn {
-  background-color: #3f8e00;
-  border: 1px solid #62ba1b;
-  color: #fff;
+  background-color: #dcc600;
+  border: 1px solid #dcc600;
+  color: #080808;
   padding: 1rem 3rem;
   font-size: 16px;
+  font-weight: bold;
   border-radius: 4px;
   font-family: "IBM Plex Mono", monospace;
-  box-shadow: 0 4px 8px hsla(93, 75%, 42%, 0.461);
+  box-shadow: 0 4px 8px #dcc600b0;
 }
 
 .tech-stack {

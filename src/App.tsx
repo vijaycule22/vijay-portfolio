@@ -277,7 +277,9 @@ function App() {
                 ></iframe>
               </div>
               <div className="w-1/2">
-                <p className="text-3xl font-bold mb-8">Hit me up! 👇</p>
+                <p className="text-3xl font-bold mb-8 text-[#080808]">
+                  Hit me up! 👇
+                </p>
 
                 <div className="flex cnt-block shadow-lg">
                   <span className="icon">
