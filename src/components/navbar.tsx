@@ -64,7 +64,7 @@ function Navbar() {
             : "lg:block hidden"
         }
       >
-        <ul className="lg:flex-row flex-col lg:gap-8 gap-4 mt-8 lg:mt-0">
+        <ul className="lg:flex-row flex-col lg:gap-8 gap-4 mt-6 lg:mt-0">
           <li onClick={toggleMenu}>
             <a href="#Home">Home</a>
           </li>
