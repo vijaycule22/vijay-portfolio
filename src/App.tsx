@@ -16,15 +16,15 @@ function App() {
       <section className="home-section" id="Home">
         <div className="flex items-center flex-col-reverse lg:flex-row justify-between hero">
           <div className="title-block text-center lg:text-left">
-            <h1>
+            <h1 className="lg:text-5xl text-4xl lg:mb-6 my-7">
               Front-End web <br />{" "}
               <span className="bg-[#bce1fb] px-1 rounded">Developer</span>
             </h1>
-            <p>
+            <p className="lg:text-base text-sm lg:mb-6">
               Hi, I'm Vijay. A passionate Front-end web Developer <br /> based
               in Hyderabad, India. 📍
             </p>
-            <div className="flex">
+            <div className="flex lg:justify-start justify-center my-6 lg:my-0">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
@@ -173,7 +173,7 @@ function App() {
               Projects
             </span>
             <div className="flex items-center flex-col-reverse lg:flex-row">
-              <div className="lg:w-1/2 w-full">
+              <div className="lg:w-1/2 w-full  text-center lg:text-left lg:mt-0 mt-6">
                 <p className="font-bold text-3xl my-4">C2Hire.</p>
                 <p className="description pr-8">
                   C2Hire. is the platform that stands and believes in the Vision
@@ -205,7 +205,7 @@ function App() {
                   </div>
                 </p>
               </div>
-              <div className="lg:w-1/2 w-full  text-center lg:text-left">
+              <div className="lg:w-1/2 w-full ">
                 <div className="card flex justify-end">
                   <a
                     href="https://hardcore-galileo-246771.netlify.app/"
@@ -268,12 +268,12 @@ function App() {
               Contact
             </span>
 
-            <div className="flex flex-col-reverse lg:flex-row gap-8 lg:gap-0">
-              <div className="lg:w-1/2 w-full">
+            <div className="flex flex-col-reverse lg:flex-row gap-8 lg:gap-0 items-center justify-center">
+              <div className="lg:w-1/2 w-full lg:p-6">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d109966.53412125268!2d78.48506214638006!3d17.425885924590325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1715237115910!5m2!1sen!2sin"
-                  width="400"
-                  height="280"
+                  width="100%"
+                  height="400"
                   style={{ border: 0 }}
                   allowFullScreen
                   className="rounded-lg shadow-lg"
