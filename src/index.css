@@ -103,6 +103,7 @@ section .hero {
   position: absolute;
   bottom: 6rem;
   margin: 0 8rem;
+  left: 0;
 }
 
 .tech-blc {
@@ -365,12 +366,12 @@ section .hero {
     border-radius: 0;
   }
   .marquee-container {
-    width: 100%;
+    width: 100vw;
     overflow: hidden;
   }
   .marquee {
     white-space: nowrap;
-    animation: marquee 20s linear infinite;
+    animation: marquee 10s linear infinite;
   }
   .marquee a {
     display: inline-block;
@@ -380,10 +381,10 @@ section .hero {
   }
   @keyframes marquee {
     0% {
-      transform: translateX(100%);
+      transform: translateX(100vw);
     }
     100% {
-      transform: translateX(-100%);
+      transform: translateX(-100vw);
     }
   }
 }/*# sourceMappingURL=index.css.map */
