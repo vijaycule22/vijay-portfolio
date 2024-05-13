@@ -146,7 +146,7 @@ function App() {
                   <img src={animage} alt="text" />
                 </span>
               </div>
-              <div className="text-side">
+              <div className="text-side lg:pl-16">
                 <span className="bg-[#bce1fb] font-bold p-1">About me</span>
 
                 <div className="font-bold text-2xl my-4">
@@ -172,8 +172,8 @@ function App() {
             <span className="bg-[#bce1fb] font-bold p-1 mb-10 inline-block">
               Projects
             </span>
-            <div className="flex items-center">
-              <div className="w-1/2">
+            <div className="flex items-center flex-col-reverse lg:flex-row">
+              <div className="lg:w-1/2 w-full">
                 <p className="font-bold text-3xl my-4">C2Hire.</p>
                 <p className="description pr-8">
                   C2Hire. is the platform that stands and believes in the Vision
@@ -205,7 +205,7 @@ function App() {
                   </div>
                 </p>
               </div>
-              <div className="w-1/2">
+              <div className="lg:w-1/2 w-full  text-center lg:text-left">
                 <div className="card flex justify-end">
                   <a
                     href="https://hardcore-galileo-246771.netlify.app/"
@@ -268,8 +268,8 @@ function App() {
               Contact
             </span>
 
-            <div className="flex">
-              <div className="w-1/2">
+            <div className="flex flex-col-reverse lg:flex-row gap-8 lg:gap-0">
+              <div className="lg:w-1/2 w-full">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d109966.53412125268!2d78.48506214638006!3d17.425885924590325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1715237115910!5m2!1sen!2sin"
                   width="400"
@@ -281,7 +281,7 @@ function App() {
                   referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>
-              <div className="w-1/2">
+              <div className="lg:w-1/2 w-full ">
                 <p className="text-3xl font-bold mb-8 text-white">
                   Hit me up! 👇
                 </p>

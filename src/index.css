@@ -239,9 +239,6 @@ section .hero {
   }
 }
 
-.text-side {
-  padding-left: 4rem;
-}
 .text-side span {
   color: #080808;
 }
