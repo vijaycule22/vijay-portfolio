@@ -8,8 +8,9 @@ import Footer from "./components/Footer";
 import html from "./assets/html.svg";
 import css from "./assets/css3.svg";
 import Testimonial from "./components/testimonial";
+import React from "react";
 
-function App() {
+const App: React.FC = () => {
   return (
     <>
       <Navbar />
@@ -64,7 +65,7 @@ function App() {
           </div>
           <div className="profile-circle mr-5">
             <img
-              className="vj-img max-w-[12em] max-h-[12em] lg:max-w-[20em] lg:max-h-[20em]"
+              className="vj-img max-w-[10em] max-h-[10em] lg:max-w-[20em] lg:max-h-[20em]"
               src={vijay}
               alt="vijay"
             />
@@ -113,21 +114,25 @@ function App() {
         {/* <p style={{ width: "56vw" }} className="relative bottom-3">
           Tech Stack
         </p> */}
-        <div className="flex tech">
-          <span className="tech-blc">
-            <img src={html} alt="hmtl" />
-            HTML
-          </span>
-          <span className="tech-blc">
-            <img src={css} alt="css" />
-            CSS
-          </span>
-          <span className="tech-blc">Angular</span>
-          <span className="tech-blc">React</span>
-          <span className="tech-blc">SCSS</span>
-          <span className="tech-blc">Nodejs</span>
-          <span className="tech-blc">SQL</span>
-          <span className="tech-blc">RxJs</span>
+        <div className="marquee-container">
+          <div className="flex tech marquee">
+            {/* <marquee scrollamount="10"> */}
+            <span className="tech-blc">
+              <img src={html} alt="hmtl" />
+              HTML
+            </span>
+            <span className="tech-blc">
+              <img src={css} alt="css" />
+              CSS
+            </span>
+            <span className="tech-blc">Angular</span>
+            <span className="tech-blc">React</span>
+            <span className="tech-blc">SCSS</span>
+            <span className="tech-blc">Nodejs</span>
+            <span className="tech-blc">SQL</span>
+            <span className="tech-blc">RxJs</span>
+            {/* </marquee> */}
+          </div>
         </div>
       </section>
 
@@ -346,6 +351,6 @@ function App() {
       <Footer />
     </>
   );
-}
+};
 
 export default App;

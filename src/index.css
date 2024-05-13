@@ -364,4 +364,26 @@ section .hero {
     width: 100%;
     border-radius: 0;
   }
+  .marquee-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  .marquee {
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+  }
+  .marquee a {
+    display: inline-block;
+    padding-right: 20px; /* Add spacing between links */
+    text-decoration: none; /* Remove underline */
+    color: blue; /* Change link color */
+  }
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
 }/*# sourceMappingURL=index.css.map */
