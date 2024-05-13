@@ -13,10 +13,9 @@ function App() {
   return (
     <>
       <Navbar />
-
       <section className="home-section" id="Home">
-        <div className="flex items-center justify-between hero">
-          <div className="title-block">
+        <div className="flex items-center flex-col-reverse lg:flex-row justify-between hero">
+          <div className="title-block text-center lg:text-left">
             <h1>
               Front-End web <br />{" "}
               <span className="bg-[#bce1fb] px-1 rounded">Developer</span>
@@ -64,7 +63,11 @@ function App() {
             </div>
           </div>
           <div className="profile-circle mr-5">
-            <img className="vj-img" src={vijay} alt="vijay" />
+            <img
+              className="vj-img max-w-[12em] max-h-[12em] lg:max-w-[20em] lg:max-h-[20em]"
+              src={vijay}
+              alt="vijay"
+            />
           </div>
         </div>
         {/* <div className="flex hero items-center tech-stack ">
@@ -112,11 +115,11 @@ function App() {
         </p> */}
         <div className="flex tech">
           <span className="tech-blc">
-            <img src={html} alt="" />
+            <img src={html} alt="hmtl" />
             HTML
           </span>
           <span className="tech-blc">
-            <img src={css} alt="" />
+            <img src={css} alt="css" />
             CSS
           </span>
           <span className="tech-blc">Angular</span>

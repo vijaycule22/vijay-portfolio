@@ -14,7 +14,7 @@ const Testimonial = () => {
             neque quibusdam!
           </p>
 
-          <div className="grid grid-cols-2 w-full gap-y-16 gap-x-8 mt-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 w-full gap-y-16 gap-x-8 mt-4">
             <div className="border border-[#9c9c9c] py-8 px-6 relative rounded">
               <span className="absolute" style={{ top: "-13px" }}>
                 <img src={excla} alt="" />

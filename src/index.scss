@@ -38,7 +38,7 @@ html {
 
 .nav ul {
   display: flex;
-  gap: 2rem;
+  // gap: 2rem;
   list-style: none;
   li {
     line-height: 1.2;
@@ -377,5 +377,11 @@ section {
 
   @media (max-width: 750px) {
     display: none;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 1020px) {
+  section .hero {
+    width: 90vw;
   }
 }

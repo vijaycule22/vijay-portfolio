@@ -37,7 +37,6 @@ html {
 
 .nav ul {
   display: flex;
-  gap: 2rem;
   list-style: none;
 }
 .nav ul li {
@@ -361,5 +360,11 @@ section .hero {
 @media (max-width: 750px) {
   .work-emoji {
     display: none;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 1020px) {
+  section .hero {
+    width: 90vw;
   }
 }/*# sourceMappingURL=index.css.map */
