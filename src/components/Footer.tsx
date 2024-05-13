@@ -3,8 +3,10 @@ const Footer = () => {
     <>
       <section className="bg-[#1B1B1B] text-white flex justify-center w-full">
         <div className="flex items-center justify-between hero">
-          <div className="flex justify-between w-full py-16">
-            <p className="text-xl">Copyright © 2024. All rights are reserved</p>
+          <div className="flex justify-between w-full lg:py-16 py-8">
+            <p className="lg:text-xl text-base">
+              Copyright © 2024. All rights are reserved
+            </p>
             <div className="flex">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
