@@ -60,7 +60,7 @@ const App: React.FC = () => {
               </svg>
             </div>
             <div className="mt-4">
-              <button className="home-btn">Lets get starter </button>
+              <button className="home-btn">Get Started</button>
             </div>
           </div>
           <div className="profile-circle mr-5">

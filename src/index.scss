@@ -11,7 +11,7 @@
 body {
   font-family: "IBM Plex Mono", monospace;
 }
-
+// 333333
 html {
   // add smoothscroll
   scroll-behavior: smooth;
@@ -20,7 +20,7 @@ html {
   align-items: center;
   background-color: #1b1b1b;
   color: #9c9c9c;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+  box-shadow: 0 0 10px #00000017;
   display: flex;
   font-size: 1.7rem;
   height: auto;
@@ -41,7 +41,7 @@ html {
   // gap: 2rem;
   list-style: none;
   li {
-    line-height: 1.2;
+    line-height: 1.3;
   }
 }
 
